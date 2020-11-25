@@ -1,0 +1,22 @@
+<mat-card>
+  <h2>Manage County</h2>
+<div style="width: 100%;">
+
+  <mat-form-field >
+    <input  [(ngModel)]="coutry.name" [formControl]="name" name="name" id="name" matInput placeholder="Name">
+  </mat-form-field>
+  &nbsp;&nbsp;&nbsp;
+  <mat-form-field >
+    <input matInput [(ngModel)]="coutry.region" [formControl]=region name="region" id="region" placeholder="Region">
+  </mat-form-field>
+
+
+<br>
+  <br>
+  <br>
+<button mat-stroked-button color="primary" style="float: right;background-color: cornflowerblue;color: white" (click)="save()">{{stage}}</button>
+<br>
+  <br>
+  <br>
+</div>
+  </mat-card>
